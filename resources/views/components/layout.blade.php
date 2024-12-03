@@ -13,6 +13,10 @@
 
 <x-navigation/>
 
+@session('exito')
+<div>{{ $value }}</div>
+@endsession
+
 {{ $slot }}
 
 @isset($sidebar)
