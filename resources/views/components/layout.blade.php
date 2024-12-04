@@ -13,7 +13,7 @@
 
 <x-navigation/>
 
-@session('exito')
+@session('status')
 <div>{{ $value }}</div>
 @endsession
 
