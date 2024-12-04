@@ -34,7 +34,6 @@ class PostController extends Controller
         return to_route('posts.index')->with('status', 'Post created successfully!');
     }
 
-
     public function edit(Post $post)
     {
         return view('posts.edit', ['post' => $post]);
@@ -46,6 +45,12 @@ class PostController extends Controller
         $post->update($request->validated());
 
         return to_route('posts.show', $post)->with('status', 'Post updated successfully!');
+    }
+
+    public function destroy(Post $post)
+    {
+        $post->delete();
+        return to_route('posts.index')->with('status', 'Post deleted successfully!');
     }
 
 }
