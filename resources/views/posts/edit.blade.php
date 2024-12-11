@@ -1,4 +1,4 @@
-<x-app-layout :meta-tittle="'Editing: '.$post->title" :meta-description="$post->body">
+<x-app-layout :meta-title="'Editing: '.$post->title" :meta-description="$post->body">
 
     <x-slot name="header">
         <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
