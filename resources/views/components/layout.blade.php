@@ -17,7 +17,7 @@
 <x-navigation/>
 
 @session('status')
-<div>{{ $value }}</div>
+<div class="bg-green-600 p-4 text-xl text-green-50 dark:bg-green-800">{{ $value }}</div>
 @endsession
 
 <main class="flex-1 p-4">
